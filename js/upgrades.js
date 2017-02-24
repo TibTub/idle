@@ -1,14 +1,14 @@
 
-var pointsTimer = setInterval(pointsTimer, 1000);
-function upgradeOne(pps, ug1owned){
-    pointsPerSeconds = pointsPerSeconds + upgradeOneOwned/2;
+var pointstimer = setInterval(pointstimer, 1000);
+function upgrade1(pps, ug1owned){
+    pps = pps + ug1owned/2;
 }
-function upgradeTwo(pps, ug2owned){
-  pointsPerSecond = pointsPerSeconds + ug2owned;
+function upgrade2(pps, ug2owned){
+  pps = pps + ug2owned;
 }
-if (pointsTimer == 0){
-  function pointsPerSecond(points, pps){
-      points = points + pointsPerSecond;
+if (pointstimer == 0){
+  function pointspersecond(points, pps){
+      points = points + pps;
   }
 }
 

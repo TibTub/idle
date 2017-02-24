@@ -1,4 +1,4 @@
-.pointbutton {
+.pointButton {
     padding: 5px;
     outline-color: black;
     background-color: white;
@@ -12,13 +12,13 @@
     cursor: pointer;
 }
 
-.pointbutton:hover {
+.pointButton:hover {
     padding: 5px;
     outline-color: inherit;
     background-color: #d3d3d3;
     cursor: pointer;
 }
-.shopitems {
+.shopItems {
   list-style: none;
   -webkit-user-select: none;
   /* Chrome/Safari */
@@ -27,20 +27,21 @@
   -ms-user-select: none;
   /* IE10+ */
 }
-.shoptimes tr td {
+.shopItems tr td {
   border-left-color: black;
   border-left-width: medium;
 }
-#ug1, #ug2 {
-  padding-top: 3px;
-  color: #DCDCDC;
-  cursor: default;
 
+.upgradeName {
+  color: #000;
+  font-weight: bold;
+  cursor: default;
 }
+
 .points {
   display: inline;
 }
-.pdisplay {
+.pointDisplay {
   padding-left: 7px;
   display: inline-block;
 }
@@ -49,9 +50,8 @@
   display: inline-block;
   font-weight: normal;
 }
-.buyug1, .buyug2 {
+.upgradeButton {
   font-weight: bold;
   display: inline-block;
-
   cursor: pointer;
 }
