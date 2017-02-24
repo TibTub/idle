@@ -1,0 +1,57 @@
+.pointbutton {
+    padding: 5px;
+    outline-color: black;
+    background-color: white;
+    display: inline-block;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    cursor: pointer;
+}
+
+.pointbutton:hover {
+    padding: 5px;
+    outline-color: inherit;
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+.shopitems {
+  list-style: none;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.shoptimes tr td {
+  border-left-color: black;
+  border-left-width: medium;
+}
+#ug1, #ug2 {
+  padding-top: 3px;
+  color: #DCDCDC;
+  cursor: default;
+
+}
+.points {
+  display: inline;
+}
+.pdisplay {
+  padding-left: 7px;
+  display: inline-block;
+}
+.cost {
+  color: black;
+  display: inline-block;
+  font-weight: normal;
+}
+.buyug1, .buyug2 {
+  font-weight: bold;
+  display: inline-block;
+
+  cursor: pointer;
+}
