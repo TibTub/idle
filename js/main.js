@@ -1,5 +1,6 @@
 var points = 0;
 var pointsPerSecond = 0;
+var costMultiplier = 1.05;
 
 var pointDisplay = $(".points").text();
 
@@ -16,6 +17,8 @@ function buyUpgrade(id, count) {
         if (upgradeToBuy.limit == -1 || upgradeToBuy.owned + count <= upgradeToBuy.limit) {
             upgradeToBuy.owned += count;
             points -= fullCost;
+
+            upgradeToBuy.cost = Math.floor(upgradeToBuy.cost * costMultiplier);
         }
     }
 }
@@ -53,6 +56,14 @@ function updateDisplay() {
         } else {
             $(this).prop("disabled", true);
         }
+    });
+
+    $('.upgradeCost').each(function() {
+        var upgradeName = $(this).data("upgrade");
+        var upgrade = upgrades[upgradeName];
+        var cost = upgrade.cost;
+
+        $(this).html("Cost: " + cost + " Points");
     });
 }
 
